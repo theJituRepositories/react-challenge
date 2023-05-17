@@ -10,10 +10,9 @@ function App() {
   return ( 
     <>
       <Navbar />
-      <Header />
       <Main />
       <Footer />
-      <Feedback /></>
+      </>
   )
   
 }

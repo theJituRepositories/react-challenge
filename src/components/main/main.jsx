@@ -15,7 +15,7 @@ function Main({title, content}) {
               <div className='content'>
                   <ul>
                       {blogPosts.map((post, index) => (
-                          <li key={index}>
+                          <li className='post' key={index}>
                               <h3>{post.title}</h3>
                               <p>{post.content}</p>
                           </li>
@@ -30,13 +30,14 @@ function Main({title, content}) {
                       <li>
                           <h3>{post.title}</h3>
                           <h3>{post.author}</h3>
+                          <button className='button-active' onClick={() => {
+                              alert(post.content)
+                          }}>Read more</button>
                       </li>
                       
                   ))}
               </ul>
           </div>
-          
-              
          </div> 
       </>
   )
