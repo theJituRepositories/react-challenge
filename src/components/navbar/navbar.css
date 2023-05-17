@@ -3,8 +3,8 @@
     display: flex;
 }
 .navbar-logo {
-    
     display: flex;
+    gap: 10;
     
 }
 .navbar-light{
@@ -19,5 +19,5 @@
 }
 .navbar-logo-img{
     width: 50px;
-    border-radius: 10px;
+    border-radius: 50%;
 }

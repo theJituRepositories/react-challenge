@@ -29,21 +29,14 @@ function Main({title, content}) {
                   {blogPosts.map((post) => (
                       <li>
                           <h3>{post.title}</h3>
-                      </li>
-                      
-                  ))}
-              </ul>
-          </div>
-          <div className='sidebar-footer'>
-              <ul>
-                  {blogPosts.map((post) => (
-                      <li>
                           <h3>{post.author}</h3>
                       </li>
                       
                   ))}
               </ul>
           </div>
+          
+              
          </div> 
       </>
   )
