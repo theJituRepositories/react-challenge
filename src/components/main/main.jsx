@@ -1,23 +1,18 @@
 import React from 'react'
-import  '../main/main.css'
+import '../main/main.css'
+import { Link } from 'react-router-dom'
+import data from '../data/data';
 function Main({title, content}) {
-    const blogPosts = 
-        [
-            { title: "Technology", content: "Technology is the most important thing in our day to day life. Sarova Holdings Provides A space where technology interacts with humanity.",author:"linter" },
-            { title: "Health", content: "A healthy community is what sarova holdings relies on, we embed technology and health to ensure a better future" ,author:"Microsoft" },
-            { title: "Money", content: "We believe in the power of investment  and therefore we help our clients in managing thier wealth and investments",author:"Kali-linux" },
-            { title: "Lifestyle", content: "A great lifestyle is a future for all our clients" ,author:"Ubuntu" }
-        ];
-    
   return (
       <>
           <div className='main'>
               <div className='content'>
                   <ul>
-                      {blogPosts.map((post, index) => (
+                      {data.map((post, index) => (
                           <li className='post' key={index}>
                               <h3>{post.title}</h3>
-                              <p>{post.content}</p>
+                              <p>{post.content.substring(0,200)}</p>
+
                           </li>
                       ))}
                   </ul>
@@ -26,13 +21,13 @@ function Main({title, content}) {
           
           <div className=' sidebar-main'>
               <ul>
-                  {blogPosts.map((post) => (
+                  {data.map((post) => (
                       <li>
                           <h3>{post.title}</h3>
                           <h3>{post.author}</h3>
-                          <button className='button-active' onClick={() => {
-                              alert(post.content)
-                          }}>Read more</button>
+                          <Link to={`/about/${post.id}`}>
+                          <button className='button-active' >Read more</button>
+                          </Link>
                       </li>
                       
                   ))}

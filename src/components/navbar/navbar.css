@@ -1,8 +1,9 @@
-.navbarMain{
+.navbar-main{
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    background-color: #b6ef70;
-    border-radius: 20px;
+    background: linear-gradient(#a95fde,#6a09b0);
+    border-radius: 5px;
     padding-top: 10px;
     /* display: flex;
     gap: 50px;
@@ -18,11 +19,7 @@
     font-size: x-large;
     border-radius: 10px;
 }
-/* .navbar-logo {
-    display: flex;
-    gap: 10;
-    
-} */
+
 .navbar-light{
     display: flex;
     justify-content: center;
@@ -42,4 +39,6 @@
     border-radius: 50%;
     border: 0 0 0 2px #fff;
 }
-
+ .navbar-buttons{
+    align-items: end;
+ }

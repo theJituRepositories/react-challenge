@@ -3,11 +3,17 @@ import Logo from '../../assets/sarova.jpg'
 import './navbar.css'
 function navbar() {
   return (
-    <div className='navbarMain'>
+    <div className='navbar-main'>
       <div className=' navbar'>
       <div className='navbar-logo'>
         <img className='navbar-logo-img' src={Logo} alt='logo picture' />
-        <h1>Sarova Holdings</h1>
+          <h2>Sarova Holdings</h2>
+          <div className='navbar-buttons'>
+            <button className='btn-home' >Home</button>
+            <button className='btn-about' >About</button>
+            <button className='btn-contact-us' >Contact - Us</button>
+            <button className='btn- highlights' >Highlights</button>
+          </div>
       </div>
       </div>
       <div className=' navbar-light'>
