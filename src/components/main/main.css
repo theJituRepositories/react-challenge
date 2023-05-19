@@ -46,5 +46,18 @@
 
 .button-active {
   border-radius: 10px;
-  background-color: gradient(#b6ef70, #a31870);
+  background: linear-gradient(#a95fde,#6a09b0);
+}
+
+#avater {
+  background-image: url('../../assets/avater1.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+#author{
+  font-size: small;
+  font-weight: bold;
 }

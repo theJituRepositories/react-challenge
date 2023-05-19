@@ -23,9 +23,10 @@ function Main({title, content}) {
               <ul>
                   {data.map((post) => (
                       <li>
-                          <h3>{post.title}</h3>
-                          <h3>{post.author}</h3>
-                          <Link to={`/about/${post.id}`}>
+                          <h3 id='title'>{post.title}</h3>
+                          <img id ='avater' />
+                          <h3 id='author'>{post.author}</h3>
+                          <Link  to={`/about/${post.id}`}>
                           <button className='button-active' >Read more</button>
                           </Link>
                       </li>

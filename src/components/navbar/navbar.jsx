@@ -13,7 +13,7 @@ function navbar() {
             <button className='btn-home' >Home</button>
             <button className='btn-about' >About</button>
             <button className='btn-contact-us' >Contact - Us</button>
-            <button className='btn- highlights' >Highlights</button>
+            <button className='btn-highlights' >Highlights</button>
           </div>
       
       </div>

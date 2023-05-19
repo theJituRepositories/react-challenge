@@ -46,6 +46,7 @@
     float: left;
     font-weight: 300;
     justify-content: space-between;
+    box-shadow: 5px 5px 5px #ccc;
 
  }
  .btn-home{
