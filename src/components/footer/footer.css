@@ -6,3 +6,10 @@
     margin: 20px;
     
 }
+.footer-small p{
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+  justify-content: center;  
+}
